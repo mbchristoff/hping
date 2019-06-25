@@ -1,4 +1,5 @@
 FROM ubuntu:18.04 as base
+RUN apt-get update
 RUN apt-get install hping3 -y
 ARG address=127.0.0.1
 ARG port=80
